@@ -12,7 +12,7 @@ function Examples() {
     script.async = true;
 
     script.onload = () => {
-      console.log('Swiper script loaded'); // Check if script loads
+
       const swiper = new window.Swiper('.swiper-container', {
         direction: 'vertical',
         effect: 'fade',

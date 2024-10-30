@@ -35,7 +35,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
 
         const name = e.target.name;
         setInput({ ...input, [name]: file });
-        console.log("name", name,file)
+     
     }
 
     const submitHandler = async (e) => {
@@ -48,12 +48,10 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
         formData.append("skills", input.skills);
         if (input.resume) {
             formData.append("resume", input.resume);
-            console.log(input.resume)
             
         }
         if (input.profilPhoto) { // Assuming you've added a state for the profile picture
             formData.append("profilPhoto", input.profilPhoto);
-            console.log("yeey")
         }
         try {
             setLoading(true);
@@ -74,7 +72,6 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
             setLoading(false);
         }
         setOpen(false);
-        console.log("update", user?.profile)
 
     }
 

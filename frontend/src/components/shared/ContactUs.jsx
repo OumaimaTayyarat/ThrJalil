@@ -84,14 +84,14 @@ function ContactUs() {
     // Utiliser ces variables pour configurer EmailJS
     
     
-    console.log("userID" ,userID)
+
     const sendEmail = (e) => {
         e.preventDefault();
         setLoading(true); // Start loading
 
         emailjs.send(serviceID, templateID, formData, userID)
         .then((response) => {
-                console.log('Email sent successfully!', response.status, response.text);
+
                 toast.success("Email sent successfully!"); // Success toast
             })
             .catch((error) => {

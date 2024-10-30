@@ -14,7 +14,7 @@ import { toast } from 'sonner'
 
 const Navbar1 = () => {
     const { user } = useSelector(store => store.auth);
-    console.log(user)
+
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -88,18 +88,18 @@ const Navbar1 = () => {
         // Function to toggle the theme
         const toggleTheme = (event) => {
             event.preventDefault(); // Prevents default behavior of the button
-            console.log("Bouton cliqué");
+      
 
             // Determine the current theme
             const isLightMode = body.classList.contains("light");
 
             if (isLightMode) {
-                console.log("Passage au mode sombre");
+   è
                 body.classList.remove("light");
                 body.classList.add("dark"); // Adds a class for dark mode
                 switchButton.classList.remove("switched");
             } else {
-                console.log("Passage au mode clair");
+     
                 body.classList.remove("dark"); // Ensures the dark class is removed
                 body.classList.add("light");
                 switchButton.classList.add("switched");

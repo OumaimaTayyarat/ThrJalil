@@ -56,7 +56,7 @@ const CompanySetup = () => {
                 },
                 withCredentials: true
             });
-            console.log(res)
+           
 
             if (res.data.success) {
                 toast.success(res.data.message);

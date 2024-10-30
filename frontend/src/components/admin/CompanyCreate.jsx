@@ -25,8 +25,7 @@ const CompanyCreate = () => {
                 },
                 withCredentials: true
             });
-            console.log(res)
-            console.log(res?.data?.success)
+           
 
             if (res?.data?.success) {
                 dispatch(setSingleCompany(res.data.company));

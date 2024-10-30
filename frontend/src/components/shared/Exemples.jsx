@@ -29,7 +29,7 @@ function Exemples() {
             });
 
             // Log the Swiper version
-            console.log('Swiper version:', window.Swiper.version);
+
 
             // Sidebars
             const moreBtns = document.querySelectorAll(".more-btn");

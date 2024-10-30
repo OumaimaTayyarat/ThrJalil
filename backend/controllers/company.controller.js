@@ -105,7 +105,6 @@ export const updateCompany = async (req, res) => {
             logo = company.logo || "";  // Si aucun logo n'existe déjà, le logo reste vide
         }
 
-        console.log("logo", logo); // Vérifie que le bon logo est utilisé
 
         // Mettre à jour les données de la compagnie
         const updateData = { 
