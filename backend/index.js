@@ -17,8 +17,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:process.env.LOCALHOST,
-    credentials:true
+  origin:process.env.LOCALHOST,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+ 
 }
 
 app.use(cors(corsOptions));
